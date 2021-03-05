@@ -75,6 +75,7 @@ a:hover {
 
 .profile-pic {
   width: 150px;
+  border-radius: 50%;
 }
 
 .profile-text {
