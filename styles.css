@@ -30,7 +30,11 @@ h2 {
 h3 {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 1.8em;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
 }
 
 p {
@@ -78,35 +82,19 @@ a:hover {
   border-radius: 50%;
 }
 
-.profile-text {
-  width: 50%;
+.my-text {
+  width: 33%;
   margin: auto;
-  text-align: justify;
+  text-align: center;
 }
 
 .code-img {
   width: 200px;
 }
 
-.skill-intro-text {
-  width: 50%;
-  margin: auto;
-  text-align: justify;
-}
-
 .htcssjs-img {
   width: 190px;
-}
-
-.my-tools-text {
-  width: 50%;
-  margin: auto;
-  text-align: justify;
-}
-
-.contact-message {
-  width: 40%;
-  margin: auto;
+  padding-top: 20px;
 }
 
 .btn {
@@ -159,4 +147,14 @@ a:hover {
   position: relative;
   top: 70px;
   font-size: 10px;
+}
+@media (max-width:1000px) {
+  h3{
+    font-size: 1.2em;
+    width: 50%;
+  }
+.mytext{
+  width: 50%;
+  text-align: justify;
+}
 }
