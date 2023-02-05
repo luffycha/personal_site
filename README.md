@@ -1,3 +1,6 @@
-# personal_site
--website build using pure javascript, html and CSS
--hosted on netlify - https://strawhatrag.netlify.app/
+
+## Personal Website
+
+- website build using pure `JavaScript, HTML and CSS` 
+- hosted on netlify - https://strawhatrag.netlify.app/
+
