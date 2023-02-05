@@ -1,68 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--website info-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="utf-8">
-  <title>Ragan's Site</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="acicon.icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Sacramento&display=swap" rel="stylesheet">
-</head>
-<!-- end of website info-->
-<!-- main body-->
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-<body>
-  <!--intro page-->
-  <div class="top-container">
-    <img class="top-cloud" src="cloud.png" alt="cloud-img" />
-    <h1>I'm&nbsp;Sreerag</h1>
-    <p class=subheading>
-      a web developer</p>
-    <img class="bottom-cloud" src="cloud.png" alt="cloud-img" />
-    <img class="mountain" src="mountain.png" alt="mountain-img" />
-  </div><br />
-  <!-- end of intro page-->
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="profile.jpg" alt="sreerag_picture">
-      <h2>Hello.</h2>
-      <p class="my-text"">I am an Engineer 👷‍♂️, Programmer 👨‍💻 , and rookie Web developer 🕸‍. I design and build websites for fun 🤘. I ❤️ learning new things, solving puzzles, and gaining new experiences. 🏂</p>
-    </div>
-    <hr>
-    <!--skills section-->
-    <div class="skills">
-      <h2>My Skills</h2><br />
-      <div class="skill-row">
-        <img class="code-img" src="code.gif" alt="monitor_img">
-        <h3>Design & Development</h3>
-        <p class="my-text"">I started learning to code in my 2nd year of college. I wanted to make my own applications. Over time, I have gained a wealth of experience designing and developing my own websites.</p>
-      </div><br /><br />
-      <div class="skill-row">
-        <img class="htcssjs-img" src="skills.png" alt=" html_css_js">
-        <h3 class="mytools-head">My tools</h3>
-        <p class="my-text"">I'm familiar with Html5, CSS3, Javascript, and PYthon3. I'm an obsessive Learner and I keep honing my current skillsets. Excelsior! - that's my motto. </p>
-      </div>
-    </div>
-    <!--end of skills section-->
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you want to work with me and design fun websites.</h3>
-      <p class="my-text">I love working on cool projects. Let's make the internet truly awesome by building fun web applications!</p>
-      <a class="btn" href="mailto:sreeragbharathan791@gmail.com">CONTACT ME</a>
-    </div>
-  </div>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets\css\styles.css">
 
+        <title>Mini portfolio website - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets\img\perfil.png" alt="">
+                        </div>
+                    </div>
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/sreerag-u/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/SreeRagSeenu">Twitter</a>
-    <a class="footer-link" href="https://github.com/strawhatrag">GitHub</a>
-    <p class="copyright">© 2021 Sreerag U @ strawhatrag.</p>
-  </div>
-<div>
-</body>
-<!-- end of main body-->
+                    <h2 class="profile__name">Sreerag U</h2>
+                    <h3 class="profile__profession">Software Engineer</h3>
+        
+                    <ul class="profile__social">
+                        <a href="https://twitter.com/SreeRagSeenu" target="_blank" class="profile__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sreerag-u/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/strawhatrag" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
 
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">1</h3>
+                        <p class="profile__info-description">Year of <br> work</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+16</h3>
+                        <p class="profile__info-description">Completed <br> projects</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">10000+</h3>
+                        <p class="profile__info-description">Lines of <br> code written</p>
+                    </div>
+                    
+                </div>
+
+                <div class="profile__buttons">
+                    <a href="assets/pdf/SreeragUrupurath.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+                    <div class="profile__buttons-small">
+                        <a href="" target="_blank" class="button button__small">
+                            <i class="ri-whatsapp-line"></i></a>
+                        <a href="" target="_blank" class="button button__small">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+
+            
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    
+
+                    <!--=============== SKILLS ===============-->
+                    
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets\js\scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets\js\main.js"></script>
+    </body>
 </html>
