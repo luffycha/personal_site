@@ -1,261 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="assets\css\styles.css" />
 
     <title>Sreerag's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--=============== HEADER PROFILE ===============-->
+
     <header class="profile container">
-        <div class="profile__container grid">
-            <div class="profile__data">
-                <div class="profile__border">
-                    <div class="profile__perfil">
-                        <img src="assets\img\perfil.png" alt="">
-                    </div>
-                </div>
+      <!-- theme button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-                <h2 class="profile__name">Sreerag U</h2>
-                <h3 class="profile__profession">Software Engineer</h3>
-
-                <ul class="profile__social">
-                    <a href="https://twitter.com/SreeRagSeenu" target="_blank" class="profile__social-link">
-                        <i class="ri-twitter-line"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sreerag-u/" target="_blank" class="profile__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                    </a>
-                    <a href="https://github.com/strawhatrag" target="_blank" class="profile__social-link">
-                        <i class="ri-github-line"></i>
-                    </a>
-                </ul>
-
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <img src="assets\img\perfil.png" alt="" />
             </div>
+          </div>
 
-            <div class="profile__info grid">
-                <div class="profile__info-group">
-                    <h3 class="profile__info-number">1</h3>
-                    <p class="profile__info-description">Year of <br> work</p>
-                </div>
-                <div class="profile__info-group">
-                    <h3 class="profile__info-number">+16</h3>
-                    <p class="profile__info-description">Completed <br> projects</p>
-                </div>
-                <div class="profile__info-group">
-                    <h3 class="profile__info-number">10000+</h3>
-                    <p class="profile__info-description">Lines of <br> code written</p>
-                </div>
+          <h2 class="profile__name">Sreerag U</h2>
+          <h3 class="profile__profession">Software Engineer</h3>
 
-            </div>
-
-            <div class="profile__buttons">
-                <a href="assets/pdf/SreeragUrupurath.pdf" class="button button__big">
-                    Download CV <i class="ri-download-line"></i>
-                </a>
-                <div class="profile__buttons-small">
-                    <a href="" target="_blank" class="button button__small">
-                        <i class="ri-whatsapp-line"></i></a>
-                    <a href="" target="_blank" class="button button__small">
-                        <i class="ri-messenger-line"></i>
-                    </a>
-                </div>
-
-            </div>
+          <ul class="profile__social">
+            <a
+              href="https://twitter.com/SreeRagSeenu"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-twitter-line"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sreerag-u/"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a
+              href="https://github.com/strawhatrag"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-github-line"></i>
+            </a>
+          </ul>
         </div>
 
+        <div class="profile__info grid">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">1</h3>
+            <p class="profile__info-description">
+              Year of <br />
+              work
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+16</h3>
+            <p class="profile__info-description">
+              Completed <br />
+              projects
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">10000+</h3>
+            <p class="profile__info-description">
+              Lines of <br />
+              code written
+            </p>
+          </div>
+        </div>
 
-
-
+        <div class="profile__buttons">
+          <a href="assets/pdf/SreeragUrupurath.pdf" class="button button__big">
+            Download CV <i class="ri-download-line"></i>
+          </a>
+          <div class="profile__buttons-small">
+            <a href="" target="_blank" class="button button__small">
+              <i class="ri-whatsapp-line"></i
+            ></a>
+            <a href="" target="_blank" class="button button__small">
+              <i class="ri-messenger-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
-        <section class="filters container">
-            <!--=============== FILTERS TABS ===============-->
-            <ui class="filters__content">
-                <button class="filters__button" data-target-"#projects">
-                    Projects
-                </button>
+      <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <ui class="filters__content">
+          <button class="filters__button" data-target="#projects">
+            Projects
+          </button>
 
-                <button class="filters__button" data-target-"#skills">
-                    Skils
-                </button>
-            </ui>
+          <button class="filters__button" data-target="#skills">Skils</button>
+        </ui>
 
-            <div class="filters__sections">
-                <!--=============== PROJECTS ===============-->
+        <div class="filters__sections">
+          <!--=============== PROJECTS ===============-->
 
-                <div class="project__content grid"  data-content id="projects">
-                    <!-- #project -->
-                    <article class="projects__card">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle">automation</span>
-                                <h3 class="projects__title">Web</h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- #project -->
-                    <article class="projects__card">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle"></span>
-                                <h3 class="projects__title"></h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!--    #project -->
-                    <article class="projects__card">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle"></span>
-                                <h3 class="projects__title"></h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <!-- #project -->
-                    <article class="projects__card">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle"></span>
-                                <h3 class="projects__title"></h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- #project -->
-                    <article class="projects__card">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle"></span>
-                                <h3 class="projects__title"></h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <!-- #project -->
-                    <article class="projects__card">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle"></span>
-                                <h3 class="projects__title"></h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+          <div
+            class="project__content grid filters__active"
+            data-content
+            id="projects"
+          >
+            <!-- #project -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">automation</span>
+                  <h3 class="projects__title">Web</h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
                 </div>
+              </div>
+            </article>
 
-                <!--=============== SKILLS ===============-->
-                <div class="skills__content grid " data-content id="skills">
-                    <div class="skillss__area">
-                        <h3 class="skills__title">
-                        Devops
-                        </h3>
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+            <!-- #project -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle"></span>
+                  <h3 class="projects__title"></h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                                    <div>
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills level">Docker</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+            <!--    #project -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle"></span>
+                  <h3 class="projects__title"></h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                                    <div>
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills level">Docker</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+            <!-- #project -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle"></span>
+                  <h3 class="projects__title"></h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                                    <div>
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills level">Docker</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+            <!-- #project -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle"></span>
+                  <h3 class="projects__title"></h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                                    <div>
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills level">Docker</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+            <!-- #project -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle"></span>
+                  <h3 class="projects__title"></h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-                                    <div>
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills level">Docker</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+          <!--=============== SKILLS ===============-->
+          <div class="skills__content grid" data-content id="skills">
+            <div class="skillss__area">
+              <h3 class="skills__title">Devops</h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
 
-                                    <div>
-                                        <h3 class="skills__name">Docker</h3>
-                                        <span class="skills level">Docker</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                      <h3 class="skills__name">Docker</h3>
+                      <span class="skills level">Docker</span>
                     </div>
-                </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
 
+                    <div>
+                      <h3 class="skills__name">Docker</h3>
+                      <span class="skills level">Docker</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Docker</h3>
+                      <span class="skills level">Docker</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Docker</h3>
+                      <span class="skills level">Docker</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Docker</h3>
+                      <span class="skills level">Docker</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Docker</h3>
+                      <span class="skills level">Docker</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
-
+      <span class="footer__copy"> &#169; Sreeerag. All rights reserved </span>
     </footer>
 
     <!--=============== SCROLLREVEAL ===============-->
@@ -263,6 +285,5 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets\js\main.js"></script>
-</body>
-
+  </body>
 </html>
