@@ -16,7 +16,8 @@
   --sat: 90%;
   --lig: 61%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -56,10 +57,13 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s; /* For animation dark mode */
+  transition: .3s;
+  /* For animation dark mode */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: 600;
 }
@@ -102,26 +106,26 @@ img {
 }
 
 /*=============== PROFILE ===============*/
-.profile{
+.profile {
   position: relative;
   padding-top: 3.5rem;
 }
 
-.profile__container{
+.profile__container {
   row-gap: 2rem;
 }
 
-.profile__data{
+.profile__data {
   display: grid;
   text-align: center;
 }
 
-.profile__perfil{
-  width:100px;
+.profile__perfil {
+  width: 100px;
   height: 100px;
   background: linear-gradient(180deg,
-              hsla(var(--hue), var(--sat), var(--lig), 1)0%,
-              hsla(var(--hue), var(--sat), var(--lig), .2)100%); 
+      hsla(var(--hue), var(--sat), var(--lig), 1)0%,
+      hsla(var(--hue), var(--sat), var(--lig), .2)100%);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -130,11 +134,11 @@ img {
 
 }
 
-.profile__perfil img{
+.profile__perfil img {
   width: 75px;
 }
 
-.profile__border{
+.profile__border {
   border: 3.5px solid var(--first-color);
   justify-self: center;
   height: 115px;
@@ -146,73 +150,75 @@ img {
 
 }
 
-.profile__name{
+.profile__name {
   font-size: var(--h2-font-size);
 }
 
-.profile__profession{
+.profile__profession {
   font-size: var(--small-font-size);
   font-weight: 500;
   columns: var(--text-color);
   margin-bottom: 1rem;
 }
 
-.profile__social{
+.profile__social {
   display: flex;
   justify-content: center;
   column-gap: .75rem;
 }
 
 
-.profile__social-link{
+.profile__social-link {
   font-size: 1.25rem;
   color: var(--title-color);
   transition: .3s;
 }
 
-.profile__social-link:hover{
+.profile__social-link:hover {
   color: var(--first-color);
 }
 
-.profile__info{
-  grid-template-columns: repeat(3,max-content);
+.profile__info {
+  grid-template-columns: repeat(3, max-content);
   justify-content: center;
   column-gap: 2.5rem;
 
 }
 
-.profile__info-group{
+.profile__info-group {
   text-align: center
 }
 
 
-.profile__info-numbers{
+.profile__info-numbers {
   font-size: var(--normal-font-size);
   margin-bottom: .25rem;
 }
 
-.profile__info-description{
+.profile__info-description {
   font-size: var(--smaller-font-size);
   font-weight: 500;
 }
 
-.profile__buttons,.profile__buttons-small{
+.profile__buttons,
+.profile__buttons-small {
   display: flex;
   align-items: center;
   justify-content: center;
-     
+
 }
 
-.profile__buttons{
+.profile__buttons {
   column-gap: 1rem;
 }
 
-.profile__buttons-small{
+.profile__buttons-small {
   column-gap: .25rem;
 }
+
 /*=============== BUTTONS ===============*/
 
-.button{
+.button {
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
@@ -224,40 +230,167 @@ img {
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
 
-.button i{
+.button i {
   font-size: 1.25rem;
 }
 
-.botton:hover{
-  background-color: var(--first-color-alt);
+.button__big:hover {
+  background-color: var(--text-color-light);
+
 }
 
-.button__small{
+.button__small {
   padding: .75rem;
   box-shadow: none;
 }
 
-.button__small{
+.button__small {
   background-color: var(--text-color-lighten);
   color: var(--title-color);
 }
 
-.button__small:hover{
+.button__small:hover {
   background-color: var(--text-color-light);
 
 }
 
 /*=============== FILTERS TABS ===============*/
 
+.filters__content {
+  margin: 2rem 0 2.5rem;
+  background-color: var(--text-color-lighten);
+  padding: .375rem;
+  border-radius: .75rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: .5rem;
+
+}
+
+.filters__button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-family: var(--body-font);
+  font-weight: 500;
+  border-radius: .75rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.filters__button:hover {
+  background-color: var(--body-color);
+}
+
 
 /*=============== PROJECTS ===============*/
+.projects__card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
 
+.projects__card img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: linear-gradient(180deg,
+      hsla(var(--hue), 24%, 40%, .3) 0%,
+      hsla(var(--hue), 24%, 4%, 1) 95%);
+
+  display: grid;
+  align-items: flex-end;
+  padding: 1.5rem 1.25rem;
+  transition: .3s;
+}
+
+.projects__subtitle,
+.projects__title {
+  color: #fff;
+}
+
+.projects__subtitle {
+  font-size: var(--small-font-size);
+}
+
+.projects__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.projects__button {
+  padding: .5rem;
+}
+
+.projects__card:hover .projects__modal {
+  bottom: 0;
+}
 
 /*=============== SKILLS ===============*/
+.skills__content {
+  row-gap: 3.5rem;
+}
 
+.skills__title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+
+}
+
+.skills__group {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.skills_data {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skiils__data i {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.skills__level {
+  font-size: var(--smaller-font-size)
+}
 
 /* Hide and show projects & skills */
 
+.filters [data-content] {
+  display: none;
+}
+
+.filters__active [data-content] {
+  display: grid;
+
+}
 
 /* Activate button filter */
 
